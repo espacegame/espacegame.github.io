@@ -1,0 +1,37 @@
+.color1{
+    background-color: #1E91D6;
+}
+.color3{
+    background-color: #1E91D6;
+    outline: auto;
+}
+.color2{
+color: #0072BB;
+}
+.fonto{
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.fonto1{
+    font-size: larger;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    opacity: 0.2; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #1E91D6; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #176a9e; 
+  }
