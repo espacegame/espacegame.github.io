@@ -5,6 +5,28 @@
     background-color: #1E91D6;
     outline: auto;
 }
+.wow:hover{
+  background-color: #1776b1;
+  
+}
+.card {
+  overflow: hidden;
+  cursor: pointer;
+}
+
+
+.btn:hover {
+  border-color: #0069d9;
+}
+.btno1:hover {
+
+
+  border-color: #0069d9;
+}
+.btno2:hover {
+
+  border-color: #ff0000;
+}
 .color2{
 color: #0072BB;
 }
@@ -15,6 +37,10 @@ color: #0072BB;
 .fonto1{
     font-size: larger;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}.fonto2{
+  font-size:x-large;
+  color: #0069d9;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 ::-webkit-scrollbar {
     width: 10px;
