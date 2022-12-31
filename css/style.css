@@ -1,0 +1,34 @@
+
+.fonto{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 15cm;
+    
+}
+
+.textp{
+font-size: xx-small;
+}
+.dodo {
+text-decoration: solid;
+color: rgb(0, 0, 0);
+}
+.dodo:hover{
+    color: rgb(255, 255, 255);
+}
+.dod button{
+    color: rgb(0, 0, 0);
+   }
+.dod button:hover{
+ color: rgb(255, 255, 255);
+}
+.wwd a{
+    color: rgb(255, 255, 255);
+}
+.wwd a:hover{
+    color: rgb(0, 0, 0);
+   }
+.col8 {
+    
+    background: rgb(58,62,180);
+    background: linear-gradient(90deg, rgba(58,62,180,1) 0%, rgba(0,57,241,1) 51%, rgba(69,125,252,1) 100%);
+      }
