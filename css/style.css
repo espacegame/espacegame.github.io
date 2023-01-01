@@ -1,10 +1,13 @@
 
 .fonto{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 15cm;
+    font-size: x-large;
+    color: rgb(255, 255, 255);
     
 }
-
+.s{
+  width:  100%;
+}
 .textp{
 font-size: xx-small;
 }
@@ -27,6 +30,16 @@ color: rgb(0, 0, 0);
 .wwd a:hover{
     color: rgb(0, 0, 0);
    }
+   .card:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
+  .logo {
+    position: fixed;
+    top: 550px;
+    left: 10px;
+    z-index: 999;
+  }
+  
 .col8 {
     
     background: rgb(58,62,180);
