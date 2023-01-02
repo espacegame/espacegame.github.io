@@ -11,15 +11,36 @@
     <script src="./js/search.js"></script>
     <script src="./bs/js/bootstrap.bundle.min.js"></script>
     <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-        $(document).ready(function() {
-          $('#search-form').submit(function(e) {
-            e.preventDefault();
-            var searchTerm = $('#search-input').val();
-            window.location.href = "./1.html?q=" + searchTerm;
-          });
+      $(document).ready(function() {
+        $('#search-form').submit(function(e) {
+          e.preventDefault();
+          var searchTerm = $('#search-input').val();
+          window.location.href = "./search/search.html?term=" + searchTerm;
         });
-      </script>
+      });
+      $(document).ready(function() {
+    var searchTerm = getUrlParameter('term');
+    $('.card').each(function() {
+      var cardText = $(this).data('search').toLowerCase();
+      var nearestAlphabet = null;
+      for (var i = 0; i < cardText.length; i++) {
+        if (cardText[i] >= 'a' && cardText[i] <= 'z') {
+          nearestAlphabet = cardText[i];
+          break;
+        }
+      }
+      if (nearestAlphabet !== searchTerm) {
+        $(this).hide();
+      }
+    });
+    var cardContent = $('.card:visible').map(function() {
+      return $(this).clone();
+    }).get();
+    $('#card-container').html(cardContent);
+  });
+    </script>
       
 </head>
 <body class="body">
@@ -165,7 +186,7 @@
       </div>
 
       <div class="container col9">
-        <h3 style="color: #8f15c3;">PRODUITS POPULAIRES <a href="#">Voir Plus Ici</a></h3>
+        <h3 style="color: #38c315;">PRODUITS POPULAIRES <a href="#">Voir Plus Ici</a></h3>
       </div>
       <nav style="height: 10px;"></nav>
       <div class="container">
@@ -228,7 +249,7 @@
       </div>
       <nav style="height: 50px;"></nav>
       <div class="container">
-        <h3 style="color: #8f15c3;">PRODUITS POPULAIRES <a href="#">Voir Plus Ici</a></h3>
+        <h3 style="color: #15c31e;">PRODUITS POPULAIRES <a href="#">Voir Plus Ici</a></h3>
       </div>
       <nav style="height: 10px;"></nav>
       <div class="container">
